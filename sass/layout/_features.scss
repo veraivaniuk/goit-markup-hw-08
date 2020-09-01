@@ -1,0 +1,45 @@
+.section.features {
+  padding-bottom: 0px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list > .item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.features-list > .item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.features-list .title {
+  color: $secondary-color;
+}
+
+.features-item {
+  fill: $secondary-color;
+}
+
+.faetures-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-fon-color;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
