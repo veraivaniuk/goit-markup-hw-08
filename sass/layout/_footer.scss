@@ -9,6 +9,10 @@
   justify-content: space-around;
   align-items: center;
 
+  @include for-size(desktop) {
+    align-items: flex-start;
+  }
+
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -20,6 +24,7 @@
 
   @include for-size(desktop) {
     text-align: start;
+    margin-bottom: 0px;
   }
 }
 
@@ -118,4 +123,9 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @include for-size(desktop) {
+    justify-content: start;
+    align-items: flex-start;
+  }
 }

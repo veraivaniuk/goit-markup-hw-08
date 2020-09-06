@@ -4,7 +4,6 @@
 }
 
 .main-nav {
-  /*display: none;*/
   @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
@@ -12,7 +11,9 @@
 }
 
 .site-nav.list {
-  margin-right: 85px;
+  @include for-size(tablet-landscape) {
+    margin-right: 85px;
+  }
 }
 
 .site-nav.list,
@@ -26,9 +27,11 @@
   align-items: center;*/
 }
 
-/*.site-nav > .item:not(:last-child) {
-  margin-right: 50px;
-}*/
+.site-nav > .item:not(:last-child) {
+  @include for-size(tablet-landscape) {
+    margin-right: 50px;
+  }
+}
 
 .site-nav .link {
   position: relative;
