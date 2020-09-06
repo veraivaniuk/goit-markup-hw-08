@@ -1,15 +1,14 @@
 .contacts {
-  display: none;
   @include for-size(tablet-landscape) {
-    margin-left: auto;
+    /*margin-left: auto;*/
   }
 
   & .link {
     display: flex;
 
-    margin-left: 30px;
+    /*margin-left: 30px;
     padding-bottom: 32px;
-    padding-top: 32px;
+    padding-top: 32px;*/
 
     color: inherit;
     font-weight: 500;

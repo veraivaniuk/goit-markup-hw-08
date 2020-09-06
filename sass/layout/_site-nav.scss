@@ -4,14 +4,14 @@
 }
 
 .main-nav {
-  @include for-size(tablet-landscape) {
+  @include for-size(desktop) {
     display: flex;
     align-items: center;
   }
 }
 
 .site-nav.list {
-  @include for-size(tablet-landscape) {
+  @include for-size(desktop) {
     margin-right: 85px;
   }
 }
@@ -29,7 +29,7 @@
 
 .site-nav > .item:not(:last-child) {
   @include for-size(tablet-landscape) {
-    margin-right: 50px;
+    /*margin-right: 50px;*/
   }
 }
 
