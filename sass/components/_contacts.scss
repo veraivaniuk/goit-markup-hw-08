@@ -1,5 +1,8 @@
 .contacts {
-  margin-left: auto;
+  display: none;
+  @include for-size(tablet-landscape) {
+    margin-left: auto;
+  }
 
   & .link {
     display: flex;

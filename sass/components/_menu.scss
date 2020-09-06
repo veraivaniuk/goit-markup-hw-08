@@ -1,0 +1,37 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 420px;
+  padding: 0;
+  align-items: center;
+  background-color: $wight-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  &.is-open {
+    display: block;
+  }
+}

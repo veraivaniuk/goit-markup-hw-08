@@ -1,3 +1,10 @@
+.section-work {
+  display: none;
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
 .work-items {
   display: flex;
 

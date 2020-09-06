@@ -4,19 +4,31 @@
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+  /*display: none;*/
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.site-nav.list {
+  margin-right: 85px;
 }
 
 .site-nav.list,
 .contacts.list {
-  display: flex;
-  align-items: center;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  /*display: flex;
+  align-items: center;*/
 }
 
-.site-nav > .item:not(:last-child) {
+/*.site-nav > .item:not(:last-child) {
   margin-right: 50px;
-}
+}*/
 
 .site-nav .link {
   position: relative;
