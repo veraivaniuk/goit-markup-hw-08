@@ -1,7 +1,14 @@
 .form-modal {
-  width: 450px;
-  height: 609px;
-  padding: 40px;
+  display: block;
+  width: 320px;
+  height: 579px;
+  padding: 16px;
+
+  @include for-size(tablet-portrait) {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
 
   @include for-size(desktop) {
     width: 528px;
@@ -146,11 +153,9 @@
 }
 
 .form-button {
-  margin-left: 85px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  @include for-size(desktop) {
-    margin-left: 124px;
-  }
 }

@@ -1,47 +1,66 @@
 .menu-nav {
-  @include for-size(desktop) {
+  display: block;
+  text-align: center;
+
+  @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
+    /*padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;*/
   }
 }
 
 .site-nav.list {
-  @include for-size(desktop) {
-    margin-right: 85px;
-  }
-}
-
-.site-nav.list,
-.contacts.list {
+  margin-bottom: 60px;
   @include for-size(tablet-landscape) {
     display: flex;
-    flex-wrap: wrap;
+    margin-right: 81px;
+    margin-bottom: 0px;
+  }
+}
+/*@include for-size(desktop) {
+    margin-right: 305px;
+  }
+}*/
+
+.site-nav.list {
+  @include for-size(tablet-landscape) {
+    display: flex;
     align-items: center;
   }
-  /*display: flex;
-  align-items: center;*/
 }
 
 .site-nav > .item:not(:last-child) {
+  margin-bottom: 40px;
   @include for-size(tablet-landscape) {
-    /*margin-right: 50px;*/
+    margin-right: 50px;
+    margin-bottom: 0px;
   }
 }
 
 .site-nav .link {
   position: relative;
-  display: block;
+  display: inline-block;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   color: $secondary-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
 
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include for-size(tablet-landscape) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .site-nav .link.current {

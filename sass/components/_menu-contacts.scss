@@ -1,44 +1,50 @@
 .contacts {
-  /*@include for-size(desktop) {
-    margin-left: auto;
-  }*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-size(tablet-landscape) {
+    align-items: flex-start;
+  }
+
+  @include for-size(desktop) {
+    flex-direction: row;
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 16px;
+
+    @include for-size(desktop) {
+      margin-right: 30px;
+    }
+  }
 
   & .link {
-    /*display: flex;*/
+    color: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-size(tablet-landscape) {
+      font-size: 14px;
+      line-height: 1.167;
+    }
 
     @include for-size(desktop) {
       padding-bottom: 32px;
       padding-top: 32px;
+      font-size: 14px;
+      line-height: 1.14;
     }
-
-    color: inherit;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       color: $acsent-color;
     }
   }
-
-  & a.link.mail {
-    align-items: center;
-
-    margin-left: 0px;
-  }
-
-  /*&-item {
-    @include for-size(tablet-landscape) {
-      display: block;
-    }
-    @include for-size(desktop) {
-      display: inline-block;
-    }
-  }*/
 }
 
 .icon-smartphone,
@@ -48,6 +54,10 @@
   fill: $primary-color;
 
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include for-size(tablet-landscape) {
+    margin-right: 8px;
+  }
 
   @include for-size(desktop) {
     margin-right: 10px;

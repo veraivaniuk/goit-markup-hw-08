@@ -13,45 +13,70 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
 
   <body>
     <!--Шапка-->
-    <header class="page-header">
-      <div class="container flexbox">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <nav class="main-nav">
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link hover-line">Студия</a>
+    <header class="page-header container">
+      <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+      <div class="navigation">
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="black"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./image/icon/spritemenu.svg#icon-cross"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./image/icon/spritemenu.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="menu-nav">
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="link hover-line">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link current">Портфолио</a>
+              </li>
+              <li class="item">
+                <a href="#contacts" class="link hover-line">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts list">
+            <li class="contacts-item">
+              <a class="link mail" href="mailto:info@devstudio.com">
+                <svg class="icon-envelope" width="16" height="12">
+                  <use href="./image/icon/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
-            </li>
-            <li class="item">
-              <a href="#contacts" class="link hover-line">Контакты</a>
+            <li class="contacts-item">
+              <a class="link phone" href="tel:+380961111111">
+                <svg class="icon-smartphone" width="10" height="16">
+                  <use href="./image/icon/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="contacts-item">
-            <a class="link mail" href="mailto:info@devstudio.com">
-              <svg class="icon-envelope" width="16" height="12">
-                <use href="./image/icon/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-item">
-            <a class="link phone" href="tel:+380961111111">
-              <svg class="icon-smartphone" width="10" height="16">
-                <use href="./image/icon/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -83,7 +108,7 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="picture">
-                  <img src="./image/techno.jpg" alt="технокряк" width="370" />
+                  <img src="./image/desktop/techno.jpg" alt="технокряк" width="370" />
                   <p class="text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -99,7 +124,7 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="picture">
-                  <img src="./image/poster.jpg" alt="постер" width="370" />
+                  <img src="./image/desktop/poster.jpg" alt="постер" width="370" />
                   <p class="text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -117,7 +142,7 @@
               <a class="portfolio-link link" href="">
                 <div class="picture">
                   <img
-                    src="./image/restaurant.jpg"
+                    src="./image/desktop/restaurant.jpg"
                     alt="лого ресторана"
                     width="370"
                   />
@@ -137,7 +162,7 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="picture">
-                  <img src="./image/prime.jpg" alt="наушники" width="370" />
+                  <img src="./image/desktop/prime.jpg" alt="наушники" width="370" />
                   <p class="text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -154,7 +179,7 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="picture">
-                  <img src="./image/boxes.jpg" alt="коробки" width="370" />
+                  <img src="./image/desktop/boxes.jpg" alt="коробки" width="370" />
                   <p class="text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -171,7 +196,7 @@
               <a class="portfolio-link link" href="">
                 <div class="picture">
                   <img
-                    src="./image/inspiration.jpg"
+                    src="./image/desktop/inspiration.jpg"
                     alt="монитор"
                     width="370"
                   />
@@ -190,7 +215,7 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="picture">
-                  <img src="./image/edition.jpg" alt="издание" width="370" />
+                  <img src="./image/desktop/edition.jpg" alt="издание" width="370" />
                   <p class="text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -206,7 +231,7 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="picture">
-                  <img src="./image/lab.jpg" alt="Проект LAB" width="370" />
+                  <img src="./image/desktop/lab.jpg" alt="Проект LAB" width="370" />
                   <p class="text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -222,7 +247,7 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="picture">
-                  <img src="./image/business.jpg" alt="" width="370" />
+                  <img src="./image/desktop/business.jpg" alt="" width="370" />
                   <p class="text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -325,5 +350,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

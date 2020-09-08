@@ -13,6 +13,7 @@
 
 .features-list > .item {
   margin: 15px;
+  width: 100%;
 
   @include for-size(tablet-landscape) {
     width: calc((100% - 4 * 15px) / 2);
