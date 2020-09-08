@@ -1,9 +1,4 @@
-.flexbox {
-  display: flex;
-  align-items: center;
-}
-
-.main-nav {
+.menu-nav {
   @include for-size(desktop) {
     display: flex;
     align-items: center;

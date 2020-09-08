@@ -4,9 +4,11 @@
 @import "./base/normalize";
 @import "./base/general";
 @import "./components/logo";
-@import "./components/menu";
+@import "./components/menu-button";
+@import "./components/menu-container";
+@import "./components/menu-nav";
+@import "./components/menu-contacts";
 @import "./components/social-link";
-@import "./components/contacts";
 @import "./components/title";
 @import "./components/button";
 @import "./components/backdrop";
@@ -14,7 +16,7 @@
 @import "./components/form";
 @import "./layout/container";
 @import "./layout/page-header";
-@import "./layout/site-nav";
+@import "./layout/navigation";
 @import "./layout/hero";
 @import "./layout/section";
 @import "./layout/portfolio";

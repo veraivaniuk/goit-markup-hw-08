@@ -1,14 +1,15 @@
 .contacts {
-  @include for-size(tablet-landscape) {
-    /*margin-left: auto;*/
-  }
+  /*@include for-size(desktop) {
+    margin-left: auto;
+  }*/
 
   & .link {
-    display: flex;
+    /*display: flex;*/
 
-    /*margin-left: 30px;
-    padding-bottom: 32px;
-    padding-top: 32px;*/
+    @include for-size(desktop) {
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
 
     color: inherit;
     font-weight: 500;
@@ -30,18 +31,27 @@
     margin-left: 0px;
   }
 
-  &-link {
-    margin-left: 10px;
-  }
+  /*&-item {
+    @include for-size(tablet-landscape) {
+      display: block;
+    }
+    @include for-size(desktop) {
+      display: inline-block;
+    }
+  }*/
 }
 
 .icon-smartphone,
 .icon-envelope {
-  margin-right: 10px;
+  display: inline-block;
 
   fill: $primary-color;
 
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include for-size(desktop) {
+    margin-right: 10px;
+  }
 }
 
 .link.phone:hover .icon-smartphone,
