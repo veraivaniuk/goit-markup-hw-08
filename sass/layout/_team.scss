@@ -3,7 +3,7 @@
 }
 
 .team {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   color: $secondary-color;
@@ -41,10 +41,6 @@
   @include for-size(desktop) {
     width: calc((100% - 8 * 15px) / 4);
     padding-bottom: 30px;
-  }
-
-  & > .img {
-    margin-bottom: 30px;
   }
 }
 

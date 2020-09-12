@@ -1390,7 +1390,7 @@ img {
 }
 
 .team {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
@@ -1432,10 +1432,6 @@ img {
     width: calc((100% - 8 * 15px) / 4);
     padding-bottom: 30px;
   }
-}
-
-.team-item > .img {
-  margin-bottom: 30px;
 }
 
 .prof {
